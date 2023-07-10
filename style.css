@@ -1,0 +1,91 @@
+/* Sets styles for the entire document */
+html {
+  /* Sets a border on the left side of the document */
+  border-left: 5px solid lightgray;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header, main, footer {
+  /* Sets the padding around the section */
+  padding: 1rem 2rem;
+}
+
+h1 {
+  /* Sets the color of the heading text */
+  color: rgb(217, 83, 21);
+}
+
+img {
+  /* Sets the width of the image */
+  width: 100%;
+}
+
+ul {
+  /* Sets the type of bullet point used for list items */
+  list-style-type: none;
+
+  /* Sets the padding around the list */
+  padding: 0;
+}
+
+header nav ul {
+  display: flex;
+
+  /* Sets how the list items are spaced out */
+  justify-content: space-between;
+}
+
+header nav a {
+  /* Sets the color of the link text */
+  color: lightgray;
+}
+
+footer nav a {
+  /* Sets the color of the link text */
+  color: rgb(217, 83, 21);
+}
+
+article {
+  /* Sets the margin below the article */
+  margin-bottom: 4rem;
+
+  /* Sets a border on the bottom of the article */
+  border-bottom: 1px solid lightgray;
+
+  /* Sets the padding below the article */
+  padding-bottom: 2rem;
+}
+
+/* Sets styles for the first letter of the first paragraph in an article */
+article p:first-of-type::first-letter {
+  /* Sets the color of the first letter */
+  color: lightgray;
+}
+
+
+footer p {
+  /* Sets the color of the paragraph text */
+  color: lightgray;
+}
+
+/* The "a" selector sets styles for all links */
+a {
+  /* Sets the color of the link text */
+  color: rgb(217, 83, 21);
+
+  /* Sets the text decoration on the link */
+  text-decoration: none;
+}
+
+/* The "p.more a" selector sets styles for links in paragraphs with class "more" */
+p.more a {
+  text-align: right;
+  font-weight: bold;
+  color: rgb(217, 83, 21);
+}
